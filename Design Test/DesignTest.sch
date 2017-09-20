@@ -1,0 +1,198 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +3.3V #PWR01
+U 1 1 5949A86D
+P 3500 2850
+F 0 "#PWR01" H 3500 2700 50  0001 C CNN
+F 1 "+3.3V" H 3500 2990 50  0000 C CNN
+F 2 "" H 3500 2850 50  0001 C CNN
+F 3 "" H 3500 2850 50  0001 C CNN
+	1    3500 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 5949A8C3
+P 7150 4950
+F 0 "#PWR02" H 7150 4700 50  0001 C CNN
+F 1 "GND" H 7150 4800 50  0000 C CNN
+F 2 "" H 7150 4950 50  0001 C CNN
+F 3 "" H 7150 4950 50  0001 C CNN
+	1    7150 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X03 RIR
+U 1 1 5949A997
+P 5500 2700
+F 0 "RIR" H 5500 2900 50  0000 C CNN
+F 1 "1x3" V 5600 2700 50  0000 C CNN
+F 2 "" H 5500 2700 50  0001 C CNN
+F 3 "" H 5500 2700 50  0001 C CNN
+	1    5500 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X03 CIR
+U 1 1 5949A9E6
+P 4950 2700
+F 0 "CIR" H 4950 2900 50  0000 C CNN
+F 1 "1x3" V 5050 2700 50  0000 C CNN
+F 2 "" H 4950 2700 50  0001 C CNN
+F 3 "" H 4950 2700 50  0001 C CNN
+	1    4950 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X03 LIR
+U 1 1 5949AA4F
+P 4450 2700
+F 0 "LIR" H 4450 2900 50  0000 C CNN
+F 1 "1x3" V 4550 2700 50  0000 C CNN
+F 2 "" H 4450 2700 50  0001 C CNN
+F 3 "" H 4450 2700 50  0001 C CNN
+	1    4450 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X16 I/O
+U 1 1 5949AC12
+P 3000 3500
+F 0 "I/O" H 3000 4350 50  0000 C CNN
+F 1 "1x16" V 3100 3500 50  0000 C CNN
+F 2 "" H 3000 3500 50  0001 C CNN
+F 3 "" H 3000 3500 50  0001 C CNN
+	1    3000 3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_01X12 I/O
+U 1 1 5949ACD6
+P 6350 3550
+F 0 "I/O" H 6350 4200 50  0000 C CNN
+F 1 "1x12" V 6450 3550 50  0000 C CNN
+F 2 "" H 6350 3550 50  0001 C CNN
+F 3 "" H 6350 3550 50  0001 C CNN
+	1    6350 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2400 4950 2400
+Wire Wire Line
+	4950 2400 5150 2400
+Wire Wire Line
+	5150 2400 5700 2400
+Wire Wire Line
+	4650 2400 4650 2600
+Wire Wire Line
+	5150 2400 5150 2600
+Connection ~ 4950 2400
+Wire Wire Line
+	5700 2400 5700 2600
+Connection ~ 5150 2400
+Wire Wire Line
+	7150 2800 7150 4950
+Wire Wire Line
+	5700 2800 5850 2800
+Wire Wire Line
+	5850 2800 7150 2800
+Wire Wire Line
+	5850 2950 5850 2800
+Wire Wire Line
+	4650 2950 5150 2950
+Wire Wire Line
+	5150 2950 5850 2950
+Wire Wire Line
+	5150 2950 5150 2800
+Connection ~ 5850 2800
+Wire Wire Line
+	4650 2950 4650 2800
+Connection ~ 5150 2950
+$Comp
+L CONN_02X03 LM
+U 1 1 5949B3ED
+P 4900 4650
+F 0 "LM" H 4900 4850 50  0000 C CNN
+F 1 "2x3" H 4900 4450 50  0000 C CNN
+F 2 "" H 4900 3450 50  0001 C CNN
+F 3 "" H 4900 3450 50  0001 C CNN
+	1    4900 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X03 RM
+U 1 1 5949B43F
+P 5650 4650
+F 0 "RM" H 5650 4850 50  0000 C CNN
+F 1 "2x3" H 5650 4450 50  0000 C CNN
+F 2 "" H 5650 3450 50  0001 C CNN
+F 3 "" H 5650 3450 50  0001 C CNN
+	1    5650 4650
+	1    0    0    -1  
+$EndComp
+Text GLabel 3200 2750 2    60   Input ~ 0
+RST
+Text GLabel 3200 2950 2    60   Input ~ 0
+ARF
+Wire Wire Line
+	3500 2850 3200 2850
+Text GLabel 3200 3050 2    60   Input ~ 0
+A0
+Text GLabel 3200 3150 2    60   Input ~ 0
+A1
+Text GLabel 3200 3250 2    60   Input ~ 0
+A2
+Text GLabel 3200 3350 2    60   Input ~ 0
+A3
+Text GLabel 3200 3450 2    60   Input ~ 0
+A4
+Text GLabel 3200 3550 2    60   Input ~ 0
+A5
+Text GLabel 3200 3650 2    60   Input ~ 0
+SCK
+Text GLabel 3200 3750 2    60   Input ~ 0
+MOSI
+$EndSCHEMATC
